@@ -1,24 +1,24 @@
-# React Weather App 🌦️
+# Recipe Finder App 🍴
 
-A modern, highly performant weather app built with **React 19**, **Bootstrap**, and **OpenWeather API**. This app provides real-time weather updates for any location with a clean and visually appealing user interface.
+A modern, highly performant recipe finder app built with **React**, **Bootstrap**, and **Edamam API**. This app helps users search and explore delicious recipes from around the world with a clean and visually appealing user interface.
 
 ---
 
 ## Features 🚀
 
-- **Real-time Weather Updates**: Fetch current weather conditions for any city using the [OpenWeather API](https://openweathermap.org/).
+- **Search Recipes by Name**: Fetch recipes for any dish using the [Edamam Recipe Search API](https://developer.edamam.com/).
+- **Real-Time Results**: Get real-time recipe results as you type.
 - **Responsive Design**: Fully optimized for desktop, tablet, and mobile devices.
-- **SEO Optimized**: Built with `react-helmet` for best search engine visibility.
-- **Dynamic Weather Themes**: Changes card design based on weather conditions (e.g., sunny, rainy, cloudy).
-- **Loading Spinner**: Interactive growing spinner for a seamless loading experience.
-- **Error Handling**: Displays user-friendly error messages for invalid city queries.
-- **Footer Section**: A modern footer with credits and API source.
+- **Dynamic Recipe Cards**: Displays recipe images, calories, and a direct link to the full recipe instructions.
+- **Loading Spinner**: Interactive spinner for a seamless loading experience.
+- **Error Handling**: Displays user-friendly error messages for invalid search queries.
+- **Modern Footer**: Includes social media icons and developer credits.
 
 ---
 
 ## Demo 🎥
 
-🚀 Check out the live demo: [React Weather App Demo](#)
+🚀 Check out the live demo: [Recipe Finder App Demo](#)
 
 ---
 
@@ -27,8 +27,8 @@ A modern, highly performant weather app built with **React 19**, **Bootstrap**, 
 ### Home Page
 ![Home Page](https://via.placeholder.com/800x400)
 
-### Weather Details
-![Weather Card](https://via.placeholder.com/800x400)
+### Recipe Search Results
+![Recipe Card](https://via.placeholder.com/800x400)
 
 ---
 
@@ -43,19 +43,20 @@ Follow these steps to set up the project on your local machine:
 ### Steps
 1. Clone the repository:
    ```bash
-   git clone https://github.com/YourUsername/react-weather-app.git
+   git clone https://github.com/YourUsername/recipe-finder-app.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd react-weather-app
+   cd recipe-finder-app
    ```
 3. Install dependencies:
    ```bash
    npm install
    ```
-4. Add your **OpenWeather API Key** to the `.env` file:
+4. Add your **Edamam API Key** to the `.env` file:
    ```bash
-   REACT_APP_WEATHER_API_KEY=your_api_key_here
+   REACT_APP_EDAMAM_APP_ID=your_app_id_here
+   REACT_APP_EDAMAM_APP_KEY=your_api_key_here
    ```
 5. Start the development server:
    ```bash
@@ -67,10 +68,9 @@ Follow these steps to set up the project on your local machine:
 
 ## Technologies Used 🛠️
 
-- **React 19**: Modern JavaScript library for building user interfaces.
+- **React**: Modern JavaScript library for building user interfaces.
 - **Bootstrap**: For responsive design and UI components.
 - **Axios**: For making API requests.
-- **react-helmet**: For SEO optimization.
 - **OpenWeather API**: To fetch real-time weather data.
 
 ---
@@ -78,19 +78,19 @@ Follow these steps to set up the project on your local machine:
 ## Folder Structure 📂
 
 ```
-weather-app/
+recipe-finder-app/
 ├── public/
-│   ├── index.html   # HTML template
+│   ├── index.html       # HTML template
 ├── src/
 │   ├── components/
 │   │   ├── Header.js        # Header component
 │   │   ├── Footer.js        # Footer component
-│   │   ├── WeatherCard.js   # Weather card component
+│   │   ├── RecipeSearch.js  # Recipe search functionality
 │   ├── pages/
 │   │   ├── Home.js          # Main page of the app
 │   ├── App.js               # Root component
 │   ├── index.js             # Entry point
-│   ├── styles.css           # Global styles
+│   ├── App.css              # Global styles
 ├── .env                     # Environment variables (API Key)
 ├── package.json             # Project metadata and dependencies
 ```
@@ -100,9 +100,9 @@ weather-app/
 ## Footer 📄
 
 The app includes a footer component that displays:
-- **Credits**: Highlighting the developer's name.
-- **API Attribution**: Acknowledges the OpenWeather API as the data source.
-- **Links**: Includes clickable links to the developer's GitHub profile and the OpenWeather website.
+- **Social Media Links**: Facebook, LinkedIn, GitHub, and Email.
+- **Credits**: Developer's name.
+- **API Attribution**: Acknowledges the Edamam Recipe Search API as the data source.
 
 ---
 
@@ -135,7 +135,7 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
 
 ## Acknowledgements 🙌
 
-- [OpenWeather API](https://openweathermap.org/) for providing weather data.
+- [Edamam Recipe Search API](https://developer.edamam.com/) for providing recipe data.
 - [Bootstrap](https://getbootstrap.com/) for responsive design components.
 - [React.js](https://reactjs.org/) for the amazing frontend framework.
 
@@ -146,4 +146,4 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
 If you have any questions or feedback, feel free to contact me:
 
 - **GitHub**: [FarhadAliTurk](https://github.com/FarhadAliTurk)
-- **Email**: your-email@example.com
+- **Email**: 369farhadali@gmail.com
