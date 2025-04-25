@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+
 function RecipeSearch() {
   const [query, setQuery] = useState("");
   const [recipes, setRecipes] = useState([]);
@@ -30,7 +31,7 @@ function RecipeSearch() {
           Search
         </button>
       </div>
-      <div className="row">
+      <div className="row recipe-results">
         {recipes.map((recipe, index) => (
           <div className="col-md-4 mb-4" key={index}>
             <div className="card recipe-card">

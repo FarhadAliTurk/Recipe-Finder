@@ -85,6 +85,7 @@ a {
 }
 
 /* Recipe Search */
+/* General Styling */
 .recipe-search {
   padding: 20px;
   background-color: #fffaf0; /* Light beige background for a food-related theme */
@@ -120,6 +121,11 @@ a {
   color: white;
 }
 
+/* Recipe Results */
+.recipe-results {
+  margin-top: 20px;
+}
+
 /* Recipe Cards */
 .recipe-card {
   border: none;
@@ -127,6 +133,7 @@ a {
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #ffffff;
 }
 
 .recipe-card:hover {
@@ -135,7 +142,7 @@ a {
 }
 
 .recipe-card img {
-  height: 200px;
+  height: 180px;
   object-fit: cover;
 }
 
@@ -143,17 +150,22 @@ a {
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   color: #333;
+  margin-bottom: 10px;
 }
 
 .recipe-card .card-text {
   font-size: 0.9rem;
   color: #666;
+  margin-bottom: 15px;
 }
 
 .view-recipe-button {
   background-color: #f4a261;
   border: none;
   font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
 }
 
 .view-recipe-button:hover {
@@ -171,8 +183,6 @@ a {
     height: 150px;
   }
 }
-
-
 
 
 /* Footer */
